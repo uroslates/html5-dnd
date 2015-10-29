@@ -15,6 +15,9 @@
     <![endif]-->
 
     <script src="./static/js/vendor/modernizr-2.6.2.min.js" type="text/javascript"></script>
+
+    <!-- Widgetizer -->
+    <link href="./gof-widget/styles/app-48a4098953.css" rel="stylesheet">
   </head>
 
   <body>
@@ -39,8 +42,8 @@
     
       <!-- PORTAL 1 -->
       <div class="url-portal columns row">
-        <div id="test-col" class="url-column span4">
-          
+        <div id="test-col" class="url-column span6">
+
           <section class="url-portlet" draggable="true">
             <header class="url-portlet-header">
               <h3 class="title">Portlet 1</h3>
@@ -67,7 +70,17 @@
 
         </div><!-- /.url-column -->
 
-        <div class="url-column span4">
+        <div class="url-column span6">
+
+          <section class="url-portlet">
+            <header class="url-portlet-header">
+              <h3 class="title">GOF Widget</h3>
+            </header>
+            <section class="url-portlet-body" style="padding: 0;">
+              <div class="widget-container"></div>
+            </section>
+          </section>
+
           <section class="url-portlet" draggable="true">
             <header class="url-portlet-header">
               <h3 class="title">Portlet 3</h3>
@@ -79,9 +92,10 @@
               <button class="btn" type="submit">Button</button>
             </footer>
           </section>
+          
         </div><!-- /.url-column -->
 
-        <div class="url-column span3"></div><!-- /.url-column -->
+        <!-- <div class="url-column span3"></div><!-- /.url-column -->
       </div>
 
       <hr/>
@@ -95,6 +109,13 @@
     <!-- javascript -->
     <script data-main="static/js/config" src="static/js/vendor/require.js"></script>
 
-
+    <!-- Widgetizer -->
+    <script src="./gof-widget/js/app-e652c9e911.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      URLWidgetizer.init({
+        selector: '.widget-container'
+      });
+    </script>
+        
   </body>
 </html>
