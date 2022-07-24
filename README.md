@@ -2,7 +2,7 @@
 
 This repo contains a small demo using HTML 5 drag & drop API.
 
-Visit [this page](http://uroslates.github.com/html5-dnd) to see the demo.
+Visit [this page](http://uroslates.github.io/html5-dnd/) to see the demo.
 
 
 ## Author
